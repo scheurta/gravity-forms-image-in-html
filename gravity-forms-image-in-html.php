@@ -63,7 +63,7 @@ function giih_gform_editor_js(){
 		  InsertVariable( target.attr('id'), null, htmltag  );
 
 		  // trigger the change event to fire any functions tied to this input's onchange
-		  target.change();	
+		  target.trigger( 'input' ).trigger( 'propertychange' );	
 		});
 
 		// Finally, open the modal
